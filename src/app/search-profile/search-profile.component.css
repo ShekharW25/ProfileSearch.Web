@@ -1,0 +1,112 @@
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  div {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form-grid-container {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Space between grid items */
+    max-width: 100%;
+    margin: 10px; /* Center the form horizontally */
+    align-content:flex-start;
+    
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items:flex-start; 
+  }
+  
+  label {
+    font-weight: bold;
+    grid-template-columns:  repeat(2, 1fr); /* Two columns with equal width */
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width:30%;
+  }
+  
+  input, select {
+    padding: 8px;
+    font-size: 16px;
+    width:70%;
+     
+  }
+  
+  input.numeric { 
+    font-size: 16px;
+    width:30%;
+  }
+  button{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:30%;
+     flex-flow: row;
+  }
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 30px;
+    width: 150px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    display:flex;
+    height: 10px;
+    width: 200px;
+  }

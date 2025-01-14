@@ -1,0 +1,20 @@
+<div class="card-container" style="margin: 70px;">
+    <h1>Search candidate profile</h1>
+    <mat-divider></mat-divider>
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="form-grid-container"> 
+  <div class="card-small form-item">
+    <label for="skills" class="label">Skills:</label>
+  <mat-form-field>
+     <mat-select
+      formControlName="skills"
+      multiple>  
+      <mat-option *ngFor="let skill of skillList" [value]="skill">
+        {{ skill }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  </div>
+    <button mat-raised-button type="submit">Search</button>
+  </form>
+  
+</div>
